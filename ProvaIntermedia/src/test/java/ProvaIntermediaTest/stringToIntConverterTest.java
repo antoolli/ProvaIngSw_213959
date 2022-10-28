@@ -24,7 +24,7 @@ public class stringToIntConverterTest {
 	@Test(expected = IllegalArgumentException.class)
 	public void stringIllegalArgumentMax() {
 		
-		funny.stringToIntConverter("32768");
+		funny.stringToIntConverter("32769");
 	}
 	
 	@Test(expected = IllegalArgumentException.class)

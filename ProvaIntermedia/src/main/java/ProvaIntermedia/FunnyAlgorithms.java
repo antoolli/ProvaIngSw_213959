@@ -74,7 +74,7 @@ public class FunnyAlgorithms {
 		
 		  int n = Integer.parseInt(number);
 		//Il numero rappresentato deve essere compreso nell'intervallo [-32768, 32767], eccezione in caso contrario
-		  if (n > 32767 || n < -32768) {
+		  if (n > 32768 || n < -32768) {
 				throw new IllegalArgumentException("Illegal value " + n);
 		  }
 		  else   return n;
