@@ -72,9 +72,17 @@ public class FunnyAlgorithms {
 	 */
 	public int stringToIntConverter(String number) throws UnsupportedOperationException {
 		
-		
-		
-		throw new UnsupportedOperationException("To be implemented");
+		  int n = Integer.parseInt(number);
+		//Il numero rappresentato deve essere compreso nell'intervallo [-32768, 32767], eccezione in caso contrario
+		  if (n > 32767 || n < -32768) {
+				throw new UnsupportedOperationException("Number not supported");
+		  }
+		  else   return n;
 	}
+	
+	
+	
 
 }
+
+
